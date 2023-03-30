@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ci-testing-deployment
+  name: cd-testing-deployment
   labels:
     app: ci-testing
 spec:
