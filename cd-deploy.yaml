@@ -5,7 +5,7 @@ metadata:
   labels:
     app: ci-testing
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: ci-testing
@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ci-testing
-        image: demoburneraccount/ci-testing:1.0
+        image: demoburneraccount/ci-testing:1.1
         ports:
         - containerPort: 5000
