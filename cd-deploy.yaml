@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: ci-testing
-        image: demoburneraccount/ci-testing:1.1
+        image: demoburneraccount/ci-testing:1.0
         ports:
         - containerPort: 5000
