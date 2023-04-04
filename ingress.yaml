@@ -1,0 +1,19 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cd-test-ingress
+  annotations:
+    ingress.kubernetes.io/rewrite-target: /
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: cd.185.55.179.56.sslip.io
+      http:
+        paths:
+          - backend:
+              service:
+                name: cd-test-service
+                port:
+                  number: 80
+            path: /
+            pathType: Prefix
